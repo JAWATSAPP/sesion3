@@ -14,7 +14,7 @@ public class Login {
     private String apeMaterno;
     private String fecNac;
     private String lugarRes;
-    private String edad;
+     private int edad;
     private String telefono;
     private String correo;
 
@@ -58,11 +58,11 @@ public class Login {
         this.lugarRes = lugarRes;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 

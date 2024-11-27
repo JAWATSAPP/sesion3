@@ -48,8 +48,8 @@ public class Logins extends ActionSupport {
         if (loginBean.getLugarRes().length() == 0) {
             addFieldError("loginBean.lugarRes", "Residencia is required.");
         }
-        if (loginBean.getEdad().length() == 0) {
-            addFieldError("loginBean.edad", "Edad is required.");
+        if (loginBean.getEdad() <18) {
+            addFieldError("loginBean.edad", "Edad es Obligatoria mayor a 18 mas.");
         }
         if (loginBean.getTelefono().length() == 0) {
             addFieldError("loginBean.telefono", "Telefono is required.");
